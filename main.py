@@ -1,8 +1,8 @@
 from web3 import Web3
 
-private_key = "0xeecc954266e1238ea5335a801230582ff3b56de0f9846d36cecc29289bfc5f99"
-receiver_address = "0x8388E266b7ea113a1570213Ca2Ab8FD39e7cb547"
-message = b"7918999"
+private_key = ""
+receiver_address = ""
+message = b""
 
 
 NODE_URL = 'https://rpc.sepolia.org' # Sepolia node
@@ -38,11 +38,6 @@ transaction_params.update({
 'gasPrice': gas_price # todo:gas price
 })
 
-# # todo: sign the transaction
-# signed_transaction = sender.signTransaction(transaction_params)
-
-# # todo: send the transaction
-# transaction_hash = w3.eth.sendRawTransaction(signed_transaction.rawTransaction)
 # Send transaction by private key
 signed_txn = w3.eth.account.sign_transaction(transaction_params, sender._private_key)
 

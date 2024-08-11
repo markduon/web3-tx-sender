@@ -5,3 +5,8 @@ A Python script for sending Ethereum transactions on the Sepolia testnet using W
 ```
 python3 create_account.py
 ```
+
+2. Send a Blockchain Transaction:
+```
+python3 main.py
+```
